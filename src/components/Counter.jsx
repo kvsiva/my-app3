@@ -12,6 +12,16 @@ export class Counter extends Component {
         this.decrement = () => this.setState({counter:this.state.counter-1})
         
     }
+
+    componentDidMount(){
+        console.log('Component Did Mount')
+        console.log('-------------------')
+    }
+
+    componentDidUpdate(){
+        console.log('Component Did Update')
+        console.log('--------------------')
+    }
     
     render() {
         console.log('Render')
