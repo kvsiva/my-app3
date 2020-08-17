@@ -18,7 +18,7 @@ export class Counter extends Component {
         console.log('-------------------')
     }
 
-    componentDidUpdate(){
+    componentDidUpdate(prevProps,prevState,snapshot){
         console.log('Component Did Update')
         console.log('--------------------')
     }
